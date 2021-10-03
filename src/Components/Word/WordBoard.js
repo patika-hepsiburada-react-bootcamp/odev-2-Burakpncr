@@ -9,7 +9,7 @@ If the user enters the correct letter, the letter will be displayed, otherwise t
             {
                  WordPartList.map((item, i) => {
                     return (
-                        <div className="input-char">
+                        <div className="input-char" key = {i}>
                             {char.includes(item) ? item : "_"}
                         </div>
                     )

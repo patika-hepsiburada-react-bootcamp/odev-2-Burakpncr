@@ -6,19 +6,19 @@ import Figure from '../HangMan/Figure'
 import './GameBoard.css'
 
 function GameBoard(props) {
-    const [wordList, setwordList] = useState([
-        { id: 1, word: "Library" },
-        { id: 2, word: "Chair" },
-        { id: 3, word: "Cupboard" },
-        { id: 4, word: "Mirror" },
-        { id: 5, word: "Wardrobe" },
-        { id: 6, word: "Fridge" },
-        { id: 7, word: "Dishwasher" },
-        { id: 8, word: "Toaster" },
-        { id: 9, word: "Spoon" },
-        { id: 10, word: "Knife" },
-        { id: 11, word: "Plate" }
-    ])
+    const wordList = [ 
+    { id: 1, word: "Library" },
+    { id: 2, word: "Chair" },
+    { id: 3, word: "Cupboard" },
+    { id: 4, word: "Mirror" },
+    { id: 5, word: "Wardrobe" },
+    { id: 6, word: "Fridge" },
+    { id: 7, word: "Dishwasher" },
+    { id: 8, word: "Toaster" },
+    { id: 9, word: "Spoon" },
+    { id: 10, word: "Knife" },
+    { id: 11, word: "Plate" }]
+    
     const [char, setchars] = useState([]) //List of correct letters received from user
     const [wrongs, setWrongs] = useState(0) //Incorrect number of letters entered by the user
     const [complete, setComplete] = useState(1) //Number of correct letters entered by the user

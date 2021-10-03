@@ -5,7 +5,7 @@ function KeyBoard(props) {
     const { setWrongs, setComplete, setStart, setchars, wrongs, charList, complete, char, WordPartList } = props;
 
     var unique = WordPartList.filter(function (itm, i, a) { 
-        return i == a.indexOf(itm); //Retrieval of different elements in the list has been provided.
+        return i === a.indexOf(itm); //Retrieval of different elements in the list has been provided.
     });
 
     const keyClick = (chars) => {
@@ -14,7 +14,7 @@ function KeyBoard(props) {
                 setchars(c => [...c, chars])
             }
             setComplete(complete + 1) //Increased the number of correct answers given by the user
-            if (complete == unique.length) { 
+            if (complete === unique.length) { 
                 setStart(false) //If the number of correct answers given and the number of different items in the list are equal, the start is updated.
             }
         }
@@ -28,12 +28,11 @@ function KeyBoard(props) {
     return (
         <div>
             {
-                charList.map((item) => {
+                charList.map((item,i) => {
                     return (
-                        <div className="word"> 
+                        <div className="word" key = {i}> 
                         <button type="button" 
                         className="CharButton btn btn-outline-dark" 
-                        key = {item}
                         value ={item}
                         disabled = {char.includes(item)}
                         onClick={() => keyClick(item)}>{item}</button> </div>
