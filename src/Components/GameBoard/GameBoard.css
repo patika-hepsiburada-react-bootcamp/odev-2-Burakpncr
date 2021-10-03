@@ -1,0 +1,38 @@
+.Word-Container {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    margin-left: 100px;
+    height: 70vh;
+}
+.word{
+    display: inline-block;
+    max-width: 10%;
+}
+.input-char {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 2em;
+    height: 5vh;
+}
+.CharButton {
+    margin-left: 15px;
+    margin-top: 10px;
+    min-width: 1em;
+}
+.input-list {
+    display: inline-block;
+}
+.char-list {
+   display: inline-block;
+}
+.Gameboard-Wrapper {
+    display: inline-block;
+    width: 40%;
+}
+.Figure-Wrapper {
+    display: inline-block;
+    margin-left:150px;
+    width: 30%;
+}

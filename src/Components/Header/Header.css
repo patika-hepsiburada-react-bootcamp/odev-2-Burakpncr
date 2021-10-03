@@ -1,0 +1,10 @@
+.Header-Container {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    text-align: center;
+    color:white ;
+}
+.Header-Container h1 {
+    padding-top: 30px;
+}

@@ -1,0 +1,26 @@
+.Word-Container {
+    max-width: 35%;
+    margin-left: 10px;
+}
+.word{
+    float: left;
+    max-width: 10%;
+}
+.input-char {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 2em;
+    height: 5vh;
+}
+.CharButton {
+    margin-left: 15px;
+    margin-top: 10px;
+    min-width: 1em;
+}
+.input-list {
+    float: left;
+}
+.char-list {
+   float: left;
+}
